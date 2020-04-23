@@ -5,7 +5,7 @@ from time import sleep
 
 from secrets import username, password
 
-class TinderBot():
+class BadooBot():
     def __init__(self):
         self.driver = webdriver.Chrome()
 
@@ -68,7 +68,7 @@ class TinderBot():
         match_popup = self.driver.find_element_by_xpath('//*[@id="modal-manager-canvas"]/div/div/div[1]/div/div[3]/a')
         match_popup.click()
 
-bot = TinderBot()
+bot = BadooBot()
 bot.login()
 sleep(8)
 bot.auto_swipe()
